@@ -1,6 +1,7 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 *,
 *::before,
@@ -497,3 +498,58 @@ body {
   .step__ingredient{
     line-height: normal;
   }
+  .back__btn{
+    display: none;
+    opacity: 0;
+  }
+
+/*For small devices*/
+
+@media (max-device-width: 900px) {
+  .header__logo{
+    display: none;
+  }
+  .search{
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  .recipe{
+    display: none;
+  }
+  .shopping{
+    display: none;
+    text-align: center;
+  }
+  .results{
+    width: 70%;
+    min-height: 60vh;
+    margin: 0 auto;
+  }
+  .container{
+    display: block;
+    min-height: 90vh;
+  }
+  .back__btn{
+    display: block;
+    float: left;
+    position: fixed;
+    top: 50vh;
+    z-index: 100000;
+    opacity: .8;
+  }
+  .back__btn img{
+    height: 1.3rem;
+  }
+
+}
+
+@media (max-device-width: 700px){
+  .search__field{
+    max-width: 33rem;
+    min-width: 25rem;
+  }
+  html{
+    font-size: 45%;
+  }
+
+}
